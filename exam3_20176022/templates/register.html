@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="login-form">
+		<div class="form">
+			<p align="center">{{error}}</p>
+			<div class="row">
+				<div class="col-md-6" style="padding-left: 500px;border-right: 6px solid grey;">
+					<form class="register-form" action="/register" method="POST">
+						<input type="text" name="reg_email" placeholder="email"><br>
+						<input type="password" name="reg_psw" placeholder="password"><br>
+						<input type="password" name="reg_cpsw" placeholder="Confirm password"><br>
+						<input type="submit" value="Create Account">
+					</form>
+				</div>
+				<div class="col-md-6">
+					<form class="login-form" action="/login" method="POST">
+						<input type="text" name="email" placeholder="email"><br>
+						<input type="password" name="password" placeholder="password"><br>
+						<input type="submit" value="Sign In">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
